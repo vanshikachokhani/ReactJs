@@ -4,7 +4,6 @@ import './App.css';
 import Person from './Person/Person'
 
 
-
 class App extends Component{
   state = {
     persons:[
@@ -83,6 +82,10 @@ class App extends Component{
         </div>
       );
       style.backgroundColor='red';
+      style[':hover'] = {
+        backgroundColor:'lightred',
+        color:'black',
+      };
     }
 
     let classes = [];
